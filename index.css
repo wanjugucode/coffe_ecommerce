@@ -24,6 +24,7 @@ body{
   .footer {
     background-color: black;
     padding: 70px 0;
+    width: 100%;
   }
   .container{
     max-width: 1170px;
@@ -33,24 +34,36 @@ body{
   .row2{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    
   }
   
   ul{
     list-style: none;
   }
   .footer-col{
-    width: 25%;
+    width: 33.3%;
     padding: 0 15px;
+    margin: 0 auto;
   
   }
+
+
+
   .footer-col h1{
     font-size: 18px;
     color: white;
     text-transform: capitalize;
     margin-bottom: 30px;
-    font-weight: 500;
     position: relative;
+    font-weight: 500;
+    margin-left: 30%;
+    text-align: justify;
+
   }
+  
+
   .footer-col h1::before{
     content: '';
     position: absolute;
@@ -64,6 +77,10 @@ body{
   .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
   }
+
+
+
+  
   .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
@@ -73,11 +90,21 @@ body{
     color: #bbbbbb;
     display: block ;
     transform: all 0.3s ease;
+    text-align: justify;
+
+
+
+
+
   }
   .footer-col ul li a:hover{
     color: #ffffff;
     padding-left: 8px;
   }
+  .footer-col .social-links{
+    margin-left: 7%;
+  }
+
   .footer-col .social-links a{
     display: inline-block;
     height: 40px;
@@ -136,10 +163,21 @@ nav{
     letter-spacing: 5px;
     transition: 7s ease;
 }
-.nav-links li{
+.nav-links li {
     list-style: none;
+
 /* Difference of text-decoration: and list-style: ;; */
 }
+.nav-links li a:hover{
+    color: white;
+    text-decoration: underline;
+    list-style: none;
+    font-size: 20px;
+}
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 20px;
+    }
 .nav-links{
   width: 30%;
   display: flex;
@@ -157,6 +195,11 @@ nav{
 /*margin Used for spacing */
 /* more abouta humburger menu */
 }
+.row{
+    display: block;
+    margin: 0 auto;
+}
+
 #cofee2{
     padding-top: 30px;
 }
@@ -225,7 +268,9 @@ background-color:#4B1F0E;
 .loginPopup {
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 .formPopup {
     display: none;
@@ -361,3 +406,10 @@ span.price {
 }
 
 
+
+.row1{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+}
