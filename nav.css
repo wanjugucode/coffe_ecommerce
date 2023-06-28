@@ -1,0 +1,17 @@
+ button{
+    text-align: center;
+    background-color:#D2691E ;
+    padding: 12px;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white
+    ;border: none;
+    margin: 0 auto;
+} 
+
+
+ .card{
+   
+    margin: auto;
+ }
