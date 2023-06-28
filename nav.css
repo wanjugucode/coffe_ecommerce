@@ -32,16 +32,7 @@
   
   }
   
-  /* .menu {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu.active {
-    display: flex;
-  } */
+ 
   .menu{
     display: flex;
     margin-right: 5%;
@@ -65,17 +56,40 @@
     text-decoration: none;
   }
  
-  
-  .menu-toggle {
-    cursor: pointer;
-  }
+
   
  
   
   @media screen and (max-width: 768px) {
     .menu-toggle {
       display: block;
+      background-color: black;
+      margin-left: 50%;
+    } 
+  
+    .hamburger {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        padding-top: 2%;
+        margin-bottom: 5px;
+        visibility: visible;
+        
+      }
+     
+  
+      .menu-toggle {
+        cursor: pointer;
+      }
+    .menu{
+        visibility: hidden;
+    }
+    .menu-toggle.active + .menu{
+        visibility: visible;
     }
   }
+
+  
+  
   
   
