@@ -1,95 +1,108 @@
- button{
+button {
     text-align: center;
-    background-color:#D2691E ;
+    background-color: #D2691E;
     padding: 12px;
     display: block;
     border-radius: 5px;
     text-decoration: none;
-    color:white
-    ;border: none;
+    color: white;
+    border: none;
     margin: 0 auto;
-} 
-
-
- .card{
-   margin: auto;
- }
-
-
+  }
+  
+  .card {
+    margin: auto;
+  }
   
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .logo{
+  
+  .logo {
     margin-left: 5%;
   }
+  
   .logo h1 {
     color: #fff;
     font-weight: bold;
     margin: 0;
-  
   }
   
- 
-  .menu{
-    display: flex;
+  .menu {
     margin-right: 5%;
-
+    display: flex;
   }
-  .hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
+  
+  .burger {
     visibility: hidden;
-    
   }
+  
+  .close {
+    visibility: hidden;
+  }
+  
   .menu li {
     margin-right: 20px;
-  
   }
   
   .menu li a {
     color: #fff;
     text-decoration: none;
   }
- 
-
-  
- 
   
   @media screen and (max-width: 768px) {
+    .burger {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      padding-top: 2%;
+      margin-bottom: 5px;
+      margin-left: 250px;
+      visibility: visible;
+    }
+  
+    .close {
+      font-size: 30px;
+      color: white;
+      visibility: visible;
+    }
+  
     .menu-toggle {
+      cursor: pointer;
+    }
+    .menu {
+      visibility: hidden;
+    }
+    .menu.active {
+      visibility: visible;
+      margin-left: -50%;
+      margin-top: 10%;
+      width: auto;
       display: block;
-      background-color: black;
-      margin-left: 50%;
-    } 
-  
-    .hamburger {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        padding-top: 2%;
-        margin-bottom: 5px;
-        visibility: visible;
-        
-      }
-     
-  
-      .menu-toggle {
-        cursor: pointer;
-      }
-    .menu{
+    }
+    .menu.active li a {
+      color: white;
+      margin-left: -55%;
+      display: block;
+      padding: 0;
+    }
+    .close.active {
+      visibility: hidden;
+    }
+    .burger.close.active {
+      visibility: visible;
+    }
+    .menu.active{
+      visibility: visible;
+    }
+    .burger.active {
         visibility: hidden;
     }
-    .menu-toggle.active + .menu{
-        visibility: visible;
+      .menu-toggle{
+        visibility: hidden;
     }
+    
   }
-
-  
-  
-  
   
