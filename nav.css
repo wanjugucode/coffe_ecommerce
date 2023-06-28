@@ -12,6 +12,70 @@
 
 
  .card{
-   
-    margin: auto;
+   margin: auto;
  }
+
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    margin-left: 5%;
+  }
+  .logo h1 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+  
+  }
+  
+  /* .menu {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu.active {
+    display: flex;
+  } */
+  .menu{
+    display: flex;
+    margin-right: 5%;
+
+  }
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    visibility: hidden;
+    
+  }
+  .menu li {
+    margin-right: 20px;
+  
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  
+  .menu-toggle {
+    cursor: pointer;
+  }
+  
+ 
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  
